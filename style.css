@@ -1,0 +1,77 @@
+/* Change the style of the whole page */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Style the main header */
+h1 {
+    color: #2c3e50;
+}
+
+/* Style the button */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Make the button change color when hovered over */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the image */
+img {
+    border-radius: 50%; /* Makes the image a perfect circle */
+    border: 5px solid #3498db; /* Adds a blue border around it */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    margin-bottom: 20px;
+}
+
+/* Style the navigation bar container */
+nav {
+    margin-bottom: 20px;
+}
+
+/* Style the navigation links */
+nav a {
+    color: #3498db;
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px; /* Adds space to the left and right of the links */
+    transition: color 0.3s; /* Makes the color transition smooth */
+}
+
+/* Change link color when hovered */
+nav a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* --- MOBILE STYLES --- */
+/* If the screen width is 600px or less, apply these rules: */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #e8ecf1; /* Darken the background slightly for mobile */
+        padding-top: 20px;       /* Reduce the top spacing */
+    }
+
+    h1 {
+        font-size: 24px;         /* Make the heading smaller so it doesn't wrap awkwardly */
+        color: #e74c3c;          /* Let's change the header color to red on mobile just to see it work! */
+    }
+
+    nav a {
+        display: block;          /* Stack the navigation links vertically instead of side-by-side */
+        margin: 10px 0;          /* Add spacing on the top and bottom of the links */
+        font-size: 20px;
+    }
+}
